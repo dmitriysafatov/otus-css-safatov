@@ -1,0 +1,148 @@
+@font-face {
+    font-display: swap;
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/PlayfairDisplay-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: normal;
+    width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'PlayfairDisplay';
+    font-weight: 600;
+    font-size: 86px;
+}
+
+h2 {
+    font-family: 'PlayfairDisplay';
+    font-weight: 500;
+    font-size: 86px;
+}
+
+blockquote {
+    font-family: 'Bitter';
+    font-weight: 400;
+}
+
+.biography blockquote {
+    font-family: Bitter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.modern {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.biography p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+span {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.testimonials blockquote {
+    font-family: Bitter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.strengths div {
+    font-family: Bitter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    text-decoration-line: underline;
+}
+
+.footer-mod {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer-mod span {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+}
