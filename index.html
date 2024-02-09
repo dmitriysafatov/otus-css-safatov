@@ -4,182 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="src/css/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
     <title>Mod Studio</title>
 </head>
 
 <body>
-    <header>
-        <p>Mod</p>
-        <nav>
-            <ul>
-                <li>Biography</li>
-                <li>Designers</li>
-                <li>Testimonials</li>
-                <li>Strong points</li>
+    <header class="header">
+        <h1 class="header-logo">Mod</h1>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-list__item"><a href="#biography">Biography</a></li>
+                <li class="header-list__item"><a href="#designers">Designers</a></li>
+                <li class="header-list__item"><a href="#testimonials">Testimonials</a></li>
+                <li class="header-list__item"><a href="#strengths">Strong points</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Mod Studio</h1>
-            <p>Modern Web Studio</p>
+    <main class="main">
+        <section class="intro">
+            <h2 class="intro-title">Mod Studio</h2>
+            <p class="intro-subtitle">Modern Web Studio</p>
         </section>
-        <section>
-            <div>
-                <p>
-                    <img src="src/assets/images/Katya Mills photo small size.jpg" alt="Katya Mills photo">
-                </p>
+        <section id="biography" class="biography">
+            <div class="biography-image">
+                <img src="src/assets/images/Katya Mills photo small size.jpg" alt="Katya Mills photo">
             </div>
-            <div>
-                <p>
-                    Biography
-                </p>
-            </div>
-            <div>
-                <h2>
+            <h4 class="biography-subtitle">Biography</h4>
+            <div class="biography-content">
+                <h2 class="biography-title">
                     Katya Mills
                 </h2>
-                <p>
-                    Art Director
-                    Scenography / Styling / Creative Photography / Design
+                <p class="biography-text text">
+                    <span>Art Director</span>
+                    <span>Scenography / Styling / Creative Photography / Design</span>
                 </p>
-                <blockquote>
+                <blockquote class="biography-blockquote blockquote">
                     “The more I deal with the work as something that is my own, as something that is personal, the more
                     successful it is.”
                 </blockquote>
             </div>
         </section>
-        <section>
-            <h2>
+        <section id="designers" class="designers">
+            <h4 class="designers-subtitle">
                 Designers
-            </h2>
-            <div>
-                <p>
-                    <img src="src/assets/images/Photo Design Jess Wonder.jpg" alt="Jess Wonder photo">
-                </p>
-                <p>
-                    Jess Wonder
-                    From/ Be more flower
-                    Skills/ Design Strategy / Marketing
-                </p>
-            </div>
-            <div>
-                <p>
-                    <img src="src/assets/images/Photo Design Kameron Clein.jpg" alt="Kameron Clein photo">
-                </p>
-                <p>
-                    Kameron Clein
-                    From/ Be more flower
-                    Skills/ Design Strategy / Marketing
-                </p>
-            </div>
-            <div>
-                <p>
-                    <img src="src/assets/images/Photo Design Louisse Red.jpg" alt="Louisse Red photo">
-                </p>
-                <p>
-                    LOUISSE RED
-                    From/ Be more flower
-                    Skills/ Design Strategy / Marketing
-                </p>
-            </div>
-            <div>
-                <p>
-                    <img src="src/assets/images/Photo Design Kameron Clein Half 2.jpg" alt="Kameron Clein photo Half">
-                </p>
-                <p>
-                    Kameron Clein
-                    From/ Be more flower
-                    Skills/ Design Strategy / Marketing
-                </p>
-            </div>
+            </h4>
+            <ul class="designers-list">
+                <li class="designers-list__item">
+                    <p class="designers-list__item-image">
+                        <img src="src/assets/images/Photo Design Jess Wonder.jpg" alt="Jess Wonder photo">
+                    </p>
+                    <h5 class="designers-list__item-title">Jess Wonder</h5>
+                    <p class="designers-text text"> <span>From/</span> more flower</p>
+                    <p class="designers-text text"><span>Skills/</span> Strategy / Marketing
+                    </p>
+                </li>
+                <li class="designers-list__item">
+                    <p class="designers-list__item-image">
+                        <img src="src/assets/images/Photo Design Kameron Clein.jpg" alt="Kameron Clein photo">
+                    </p>
+                    <h5 class="designers-list__item-title">Kameron Clein</h5>
+                    <p class="designers-text text"><span>From/</span> more flower</p>
+                    <p class="designers-text text"><span>Skills/ </span> Strategy / Marketing</p>
+                </li>
+                <li class="designers-list__item">
+                    <p class="designers-list__item-image">
+                        <img src="src/assets/images/Photo Design Louisse Red.jpg" alt="Louisse Red photo">
+                    </p>
+                    <h5 class="designers-list__item-title">LOUISSE RED</h5>
+                    <p class="designers-text text"><span>From/</span> more flower</p>
+                    <p class="designers-text text"><span>Skills/</span> Strategy / Marketing</p>
+                </li>
+                <li class="designers-list__item">
+                    <p class="designers-list__item-image">
+                        <img src="src/assets/images/Photo Design Kameron Clein Half 2.jpg"
+                            alt="Kameron Clein photo Half">
+                    </p>
+                    <h5 class="designers-list__item-title">Kameron Clein</h5>
+                    <p class="designers-text text"><span>From/</span> more flower</p>
+                    <p class="designers-text text"><span>Skills/</span> Strategy / Marketing</p>
+                </li>
+            </ul>
         </section>
-        <section>
-            <div>
-                <p>
-                    Creativity
-                    www.whitepapers.com
-
-                </p>
-                <p>
-                    Creativity
-                    www.whitepapers.com
-
-                </p>
-                <p>
-                    Website
-                    www.whitepapers.com
-
-                </p>
+        <section id="testimonials" class="testimonials">
+            <ul class="testimonials-list">
+                <li class="testimonials-list__item">
+                    <span>Creativity</span>
+                    <a href="#">www.whitepapers.com</a>
+                </li>
+                <li class="testimonials-list__item">
+                    <span>Creativity</span>
+                    <a href="#">www.whitepapers.com</a>
+                </li>
+                <li class="testimonials-list__item">
+                    <span>Website</span>
+                    <a href="#">www.whitepapers.com</a>
+                </li>
+            </ul>
+            <div class="testimonials-image">
+                <img src="src/assets/images/Testimonials.jpg" alt="Testimonials photo">
             </div>
-            <div>
-                <p>
-                    <img src="src/assets/images/Testimonials.jpg" alt="Testimonials photo">
-                </p>
-            </div>
-            <div>
-                <h2>
-                    Testimonials
-                </h2>
-            </div>
-            <div>
-                <blockquote>
+            <h4 class="testimonials-subtitle">
+                Testimonials
+            </h4>
+            <div class="testimonials-content">
+                <blockquote class="testimonials-blockquote blockquote">
                     I just really want to do good work and work with some great people, people who challenge me.
                 </blockquote>
-                <p>
+                <div class="testimonials-image">
                     <img src="src/assets/images/man with bag.jpg" alt="man with bag photo">
-                </p>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>
-                    Strong points
-                </h2>
-                <p>
-                    <img src="src/assets/images/Strengths-1.jpg" alt="Strengths-1 photo">
-                </p>
-                <p>
-                    <img src="src/assets/images/Strengths-2.jpg" alt="Strengths-2 photo">
-                </p>
-            </div>
-            <div>
-                <p>
-                    Strengths
-                </p>
-                <ul>
-                    <li>Interiors</li>
-                    <li>Outdoors</li>
-                    <li>Portraits</li>
-                    <li>Styling</li>
-                    <li>Events</li>
-                    <li>Architecture</li>
-                    <li>Design</li>
-                    <li>Celebrations</li>
-                    <li>Fashion</li>
-                    <li>Nature</li>
-                </ul>
-                <p>
-                    <img src="src/assets/images/Strengths-3.jpg" alt="Strengths-3 photo">
-                </p>
+        <section id="strengths" class="strengths">
+            <h4 class="strengths-subtitle">
+                Strong points
+            </h4>
+            <div class="strengths-content">
+                <div class="strengths-content__item">
+                    <div class="strengths-image">
+                        <img src="src/assets/images/Strengths-1.jpg" alt="Strengths-1 photo">
+                    </div>
+                </div>
+                <div class="strengths-content__item">
+                    <div class="strengths-image">
+                        <img src="src/assets/images/Strengths-2.jpg" alt="Strengths-2 photo">
+                    </div>
+                </div>
+                <div class="strengths-content__item">
+                    <h2 class="strengths-title">
+                        Strengths
+                    </h2>
+                    <ul class="strengths-content-list">
+                        <li class="strengths-content-list__item">Interiors</li>
+                        <li class="strengths-content-list__item">Outdoors</li>
+                        <li class="strengths-content-list__item">Portraits</li>
+                        <li class="strengths-content-list__item">Styling</li>
+                        <li class="strengths-content-list__item">Events</li>
+                        <li class="strengths-content-list__item">Architecture</li>
+                        <li class="strengths-content-list__item">Design</li>
+                        <li class="strengths-content-list__item">Celebrations</li>
+                        <li class="strengths-content-list__item">Fashion</li>
+                        <li class="strengths-content-list__item">Nature</li>
+                    </ul>
+                </div>
+                <div class="strengths-content__item">
+                    <div class="strengths-image">
+                        <img src="src/assets/images/Strengths-3.jpg" alt="Strengths-3 photo">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <p>
-                +7 921 123-45-67
-                info@modstudio.com
-            </p>
-            <p>
-                A product of MOD
-            </p>
-            <p>
-                © 2023 Mod Media. All rights reserved
-            </p>
-        </div>
+    <footer class="footer">
+
+        <address class="footer-address">
+            <a class="footer-address__link" href="tel:79211234567">+7&nbsp;921&nbsp;123&#8209;45&#8209;67</a>
+            <a class="footer-address__link" href="mailto:info@modstudio.com">info@modstudio.com</a>
+        </address>
+        <p class="footer-logo">
+            A product of <span>MOD</span>
+        </p>
+        <p class="footer-copyright">
+            © 2023 Mod Media. All rights reserved
+        </p>
+
     </footer>
+</body>
+
+</html>
+<p>
+    © 2023 Mod Media. All rights reserved
+</p>
+</div>
+</footer>
 </body>
 
 </html>

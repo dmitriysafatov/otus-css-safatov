@@ -1,0 +1,174 @@
+@font-face {
+    font-display: swap;
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/PlayfairDisplay-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: normal;
+    margin: 0 auto;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px 16px 23px;
+}
+
+.header-logo {
+    font-family: 'PlayfairDisplay';
+    font-weight: 600;
+    font-size: 86px;
+    line-height: 120%;
+}
+
+.header-list__item {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.intro-title {
+    font-family: "Playfair Display";
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.intro-subtitle {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.biography-title {
+    font-family: "Playfair Display";
+    font-size: 86px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-text {
+    display: flex;
+    flex-direction: column;
+    color: #0D0D0D;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-blockquote {
+    color: #0D0D0D;
+    font-family: Bitter;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.designers-list__item-title {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.designers-text span {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.designers-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.testimonials-blockquote {
+    font-family: Bitter;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.strengths-title {
+    font-family: "Playfair Display";
+    font-size: 86px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.strengths-content-list__item {
+    font-family: Bitter;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.footer-address__link {
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.footer-logo {
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer-logo span {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.footer-copyright {
+    color: var(--White, #FFF);
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
