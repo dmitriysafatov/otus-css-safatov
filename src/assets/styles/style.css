@@ -20,7 +20,30 @@
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    max-width: 1397px;
+    height: 135px;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-nav {}
+
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 55px;
+    flex: 1 0 0;
+}
+
+#text-underline {
+    text-decoration-line: underline;
+}
+
 body {
+    background: #FFF;
     max-width: 1440px;
     font-family: 'Roboto';
     font-size: 16px;
@@ -34,6 +57,12 @@ body {
 ul,
 ol {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 header {
@@ -57,6 +86,26 @@ header {
     font-weight: 500;
 }
 
+.intro {
+    background-image: url('../images/intro\ background.jpg');
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-background-block {
+    background-color: #FFF;
+    display: flex;
+    width: 690px;
+    height: 360px;
+    padding: 110px 20px 110px 20px;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .intro-title {
     font-family: "Playfair Display";
     font-size: 86px;
@@ -68,6 +117,15 @@ header {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 500;
+}
+
+.biography {
+    margin-top: 140px;
+}
+
+.biography-subtitle {
+    width: 571px;
+    height: 840px;
 }
 
 h4 {
