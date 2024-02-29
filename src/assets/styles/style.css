@@ -203,10 +203,35 @@ h4 {
     font-weight: 400;
 }
 
+#designers {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 .designers {
-    display: flex;
-    justify-content: center;
-    align-items: start;
+    width: 1420px;
+}
+
+.designers-subtitle {
+    padding: 0px 967px 30px 119px;
+}
+
+.designers-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.designers-list__item {
+    align-self: end;
+}
+
+.designers-list__item-image {
+    padding-bottom: 24px;
+}
+
+.jess-wonder-text {
+    padding-left: 239px;
 }
 
 .designers-list__item-title {
