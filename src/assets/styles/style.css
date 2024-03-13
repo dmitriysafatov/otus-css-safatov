@@ -36,6 +36,13 @@ body {
     font-weight: 400;
 }
 
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
 ul,
 ol {
     list-style: none;
@@ -53,7 +60,6 @@ section {
 
 .container {
     max-width: 1440px;
-    height: auto;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -66,8 +72,6 @@ section {
     padding: 16px 20px 16px 23px;
     max-width: 1397px;
 }
-
-.header-nav {}
 
 .header-list {
     display: flex;
@@ -209,7 +213,8 @@ h4 {
 }
 
 .designers {
-    width: 1420px;
+    max-width: 1420px;
+    width: 100%;
 }
 
 .designers-subtitle {
@@ -256,30 +261,34 @@ h4 {
 
 .testimonials {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 119px 98px 1fr 1fr 451px 118px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonials-content-1 {
+    display: block;
 }
 
 .testimonials-list {
+    margin-left: -118px;
     display: grid;
+    height: 100%;
+    width: 118px;
+    align-content: space-around;
     gap: 70px;
-    grid-column: 2/3;
-    align-items: center;
-    justify-content: center;
 }
 
 .testimonials-list__item-1 {
-    padding: 49px 20px 0px 0px;
+    /*padding: 49px 20px 0px 0px;*/
     transform: rotate(-90deg);
 }
 
 .testimonials-list__item-2 {
-    padding: 41px 0px 0px 0px;
+    /*padding: 41px 0px 0px 0px;*/
     transform: rotate(-90deg);
 }
 
 .testimonials-list__item-3 {
-    padding: 41px 0px 0px 30px;
+    /* padding: 41px 0px 0px 30px;*/
     transform: rotate(-90deg);
 }
 
@@ -293,22 +302,34 @@ h4 {
     text-transform: capitalize;
 }
 
-.testimonials-image {
-    padding-left: 20px;
-    grid-column: 3/4;
+.testimonials-image-big {
+    position: relative;
+    padding-left: 118px;
+    max-width: 569px;
+    height: 760px;
+    width: 100%;
+    background-position: 118px center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
 
 .testimonials-subtitle {
-    display: grid;
-    align-self: start;
-    height: 140px;
-    grid-column: 4/5;
-    padding-left: 24px;
+    position: absolute;
+    top: 50px;
+    transform: rotate(-90deg);
+    right: 0px;
+    /* display: grid; */
+    height: 40px;
+    /* grid-column: 4 / 5; */
+    /* padding-left: 24px; */
+    margin-right: -112px;
 }
 
-.testimonials-subtitle h4 {
-    transform: rotate(-90deg);
 
+.testimonials-content-2 {
+    display: grid;
 }
 
 .testimonials-content {
@@ -325,8 +346,6 @@ h4 {
     font-size: 32px;
     font-weight: 400;
 }
-
-.testimonials-image {}
 
 .strengths {
     display: flex;
