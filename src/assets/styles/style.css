@@ -202,7 +202,6 @@ h4 {
 
 #designers {
     overflow-x: auto;
-    white-space: nowrap;
 }
 
 .designers {
@@ -338,20 +337,28 @@ h4 {
     font-weight: 400;
 }
 
-.strengths {
-    display: flex;
-    justify-content: center;
-    align-items: start;
+#Strong-points {
+    overflow-x: auto;
 }
 
-.strengths-title {
+.Strong-points {
+    display: flex;
+    gap: 21px;
+}
+
+.Strong-points-subtitle h4 {
+    padding-bottom: 30px;
+    padding-left: 238px;
+}
+
+.Strong-points-title {
     font-family: "Playfair Display";
     font-size: 86px;
     font-weight: 500;
     line-height: 100%;
 }
 
-.strengths-content-list__item {
+.Strong-points-content-list__item {
     font-family: "Bitter";
     font-size: 34px;
     font-weight: 400;
