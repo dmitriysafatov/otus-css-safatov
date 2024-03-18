@@ -346,16 +346,31 @@ h4 {
     gap: 21px;
 }
 
+.Strong-points-image {
+    width: 100%;
+}
+
+.Strong-points-image img {
+    width: 100%;
+    height: 555px;
+}
+
 .Strong-points-subtitle h4 {
     padding-bottom: 30px;
     padding-left: 238px;
 }
 
 .Strong-points-title {
+    padding: 0px 37px 28px 37px;
     font-family: "Playfair Display";
     font-size: 86px;
     font-weight: 500;
     line-height: 100%;
+}
+
+.Strong-points-content-list {
+    display: grid;
+    justify-content: center;
 }
 
 .Strong-points-content-list__item {
