@@ -8,7 +8,7 @@
 
 @font-face {
     font-display: swap;
-    font-family: 'PlayfairDisplay';
+    font-family: 'PlayfairDisplay', serif;
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
@@ -268,17 +268,14 @@ h4 {
 }
 
 .testimonials-list__item-1 {
-    /*padding: 49px 20px 0px 0px;*/
     transform: rotate(-90deg);
 }
 
 .testimonials-list__item-2 {
-    /*padding: 41px 0px 0px 0px;*/
     transform: rotate(-90deg);
 }
 
 .testimonials-list__item-3 {
-    /* padding: 41px 0px 0px 30px;*/
     transform: rotate(-90deg);
 }
 
@@ -310,10 +307,7 @@ h4 {
     top: 50px;
     transform: rotate(-90deg);
     right: 0px;
-    /* display: grid; */
     height: 40px;
-    /* grid-column: 4 / 5; */
-    /* padding-left: 24px; */
     margin-right: -112px;
 }
 
@@ -337,30 +331,54 @@ h4 {
     font-weight: 400;
 }
 
-#Strong-points {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 66 version
+*/
+
+#strong-points {
+    max-width: 1420px;
+    width: 100%;
     overflow-x: auto;
+    padding: 0px 0px 0px 20px;
 }
 
-.Strong-points {
-    display: flex;
-    gap: 21px;
+.strong-points {
+    white-space: nowrap;
 }
 
-.Strong-points-image {
-    width: 100%;
+.strong-points-image {
+    display: inline-block;
+    padding-right: 20px;
 }
 
-.Strong-points-image img {
-    width: 100%;
+#strong-points-image-3 {
+    padding: 0px;
+}
+
+.strong-points-content-list {
+    text-align: center;
+}
+
+.strong-points-content-item {
+    display: inline-block;
+    position: relative;
+    bottom: 36px;
+    padding-right: 20px;
+}
+
+.strong-points-image img {
     height: 555px;
 }
 
-.Strong-points-subtitle h4 {
+.strong-points-subtitle h4 {
     padding-bottom: 30px;
     padding-left: 238px;
 }
 
-.Strong-points-title {
+.strong-points-title {
     padding: 0px 37px 28px 37px;
     font-family: "Playfair Display";
     font-size: 86px;
@@ -368,12 +386,7 @@ h4 {
     line-height: 100%;
 }
 
-.Strong-points-content-list {
-    display: grid;
-    justify-content: center;
-}
-
-.Strong-points-content-list__item {
+.strong-points-content-list-item {
     font-family: "Bitter";
     font-size: 34px;
     font-weight: 400;
@@ -389,6 +402,7 @@ h4 {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     text-transform: uppercase;
 }
@@ -412,4 +426,27 @@ h4 {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 400;
+}
+
+@supports ((display: -ms-grid) or (display: grid)) and (display: flex) {
+    .strong-points-content-list {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .strong-points {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .strong-points-content-item {
+        bottom: 0px;
+        padding-right: 20px;
+    }
 }
