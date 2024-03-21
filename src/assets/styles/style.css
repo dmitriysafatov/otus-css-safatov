@@ -339,10 +339,8 @@ h4 {
 */
 
 #strong-points {
-    max-width: 1420px;
     width: 100%;
     overflow-x: auto;
-    padding: 0px 0px 0px 20px;
 }
 
 .strong-points {
@@ -449,4 +447,127 @@ h4 {
         bottom: 0px;
         padding-right: 20px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .header-list {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header-logo {
+        font-size: 60px;
+    }
+
+    .header-list__item {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .intro {
+        padding: 100px 0 100px;
+    }
+
+    .intro-background-block {
+        padding: 80px 40px;
+        width: auto;
+    }
+
+    .intro-title {
+        font-size: 60px;
+    }
+
+    .intro-subtitle {
+        font-size: 16px;
+    }
+
+    .biography {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biography-image {
+        max-width: 100%;
+    }
+
+    .biography-subtitle {
+        transform: none;
+        padding: 0;
+    }
+
+    .biography-content {
+        width: 100%;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .biography-title {
+        font-size: 60px;
+    }
+
+    .biography-text {
+        font-size: 16px;
+    }
+
+    #rectangle {
+        display: none;
+    }
+
+    .biography-blockquote {
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+
+    .designers-list__item-image {
+        padding-bottom: 12px;
+    }
+
+    .designers-list__item-title {
+        font-size: 14px;
+    }
+
+    .designers-text span {
+        font-size: 14px;
+    }
+
+    .designers-text {
+        font-size: 14px;
+    }
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-address {
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer-logo span {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+
 }
