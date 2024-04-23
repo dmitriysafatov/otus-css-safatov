@@ -28,7 +28,7 @@
         </div>
     </header>
     <main>
-        <section class="section">
+        <section class="section section-intro">
             <div class="container-intro">
                 <div class="intro">
                     <div class="intro-background-block">
@@ -45,7 +45,10 @@
             <div class="container">
                 <div class="biography">
                     <div class="biography-image">
-                        <img src="src/assets/images/Katya Mills photo small size.jpg" alt="Katya Mills photo">
+                        <picture>
+                            <source srcset="src/assets/images/KatyaMills2.jpg" media="(max-width: 450px)">
+                            <img src="src/assets/images/Katya Mills photo.jpg" alt="Katya Mills photo">
+                        </picture>
                     </div>
                     <h4 class="biography-subtitle">Biography</h4>
                     <div class="biography-content">
@@ -123,8 +126,7 @@
             <div class="testimonials container">
                 <div class="testimonials-content-1">
 
-                    <div style="background-image: url('src/assets/images/Testimonials.jpg') ;"
-                        class="testimonials-image-big">
+                    <div class="testimonials-image-big">
                         <ul class="testimonials-list">
                             <li class="testimonials-list__item-1">
                                 <span>Website</span>
@@ -154,7 +156,26 @@
                             me.
                         </blockquote>
                         <div class="testimonials-image">
-                            <img src="src/assets/images/man with bag.jpg" alt="man with bag photo">
+                            <picture>
+                                <source srcset="src/assets/images/man2.jpg" media="(max-width: 450px)">
+                                <img src="src/assets/images/man with bag.jpg" alt="Абстрактное изображение">
+                            </picture>
+                        </div>
+                        <div class="testimonials-links">
+                            <ul>
+                                <li>
+                                    <span>Website</span>
+                                    <a href="#">www.whitepapers.com</a>
+                                </li>
+                                <li>
+                                    <span>Creativity</span>
+                                    <a href="#">www.whitepapers.com</a>
+                                </li>
+                                <li>
+                                    <span>Creativity</span>
+                                    <a href="#">www.whitepapers.com</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -197,9 +218,21 @@
                 </div>
             </div>
         </section>
+        <section class="mobile-section-nav">
+            <div class="container">
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-list-item"><a href="#biography">B</a></li>
+                        <li class="mobile-nav-list-item"><a href="#designers">D</a></li>
+                        <li class="mobile-nav-list-item"><a href="#testimonials">T</a></li>
+                        <li class="mobile-nav-list-item text-underline"><a href="#strengths">S</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-        <div class="conteiner">
+        <div class="container">
             <div class="footer-inner">
                 <address class="footer-address">
                     <a class="footer-address__link" href="tel:79211234567">+7&nbsp;921&nbsp;123&#8209;45&#8209;67</a>

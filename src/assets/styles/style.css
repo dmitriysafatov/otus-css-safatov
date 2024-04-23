@@ -147,6 +147,7 @@ h4 {
 }
 
 .biography-image img {
+    max-width: 571px;
     width: 100%;
     padding-left: 118px;
 }
@@ -185,6 +186,7 @@ h4 {
 
 .biography-list {
     display: flex;
+    /* width: 455px; */
 }
 
 .biography-list li:nth-child(n+2):before {
@@ -299,6 +301,7 @@ h4 {
 }
 
 .testimonials-image-big {
+    background-image: url('../images/Testimonials.jpg');
     position: relative;
     padding-left: 118px;
     max-width: 569px;
@@ -323,6 +326,10 @@ h4 {
 
 .testimonials-content-2 {
     display: grid;
+}
+
+.testimonials-links {
+    display: none;
 }
 
 .testimonials-content {
@@ -397,6 +404,10 @@ h4 {
     font-family: "Bitter";
     font-size: 34px;
     font-weight: 400;
+}
+
+.mobile-section-nav {
+    display: none;
 }
 
 .footer {
@@ -582,6 +593,11 @@ h4 {
 }
 
 @media only screen and (max-width: 451px) {
+    h4 {
+        font-size: 18px;
+
+    }
+
     .header-inner {
         visibility: hidden;
         display: none;
@@ -602,7 +618,11 @@ h4 {
     }
 
     section {
-        margin-bottom: 0px;
+        margin-bottom: 80px;
+    }
+
+    .section-intro {
+        margin-bottom: 0;
     }
 
     .intro-title {
@@ -627,11 +647,6 @@ h4 {
     }
 
     .biography-subtitle {
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21.09px;
-        text-align: left;
         padding: 0;
         position: absolute;
         top: 0;
@@ -642,6 +657,7 @@ h4 {
     .biography-content-block {
         display: flex;
         flex-direction: column-reverse;
+        gap: 0;
     }
 
     br {
@@ -649,7 +665,7 @@ h4 {
     }
 
     .biography-content-block h2::before {
-        content: "—";
+        content: " \2010";
     }
 
     .biography-title {
@@ -658,6 +674,8 @@ h4 {
         font-weight: 400;
         line-height: 85.31px;
         text-align: left;
+        padding-top: 41px;
+        padding-bottom: 35px;
 
     }
 
@@ -675,7 +693,7 @@ h4 {
     }
 
     .biography-list li:nth-child(n+1):before {
-        content: "—";
+        content: " \2010";
         position: relative;
         left: -5px;
     }
@@ -696,12 +714,194 @@ h4 {
     }
 
     .biography-blockquote {
-        padding-top: 164px;
-        font-family: Bitter;
+        padding-top: 112px;
         font-size: 30px;
         font-weight: 300;
-        line-height: 36px;
-        text-align: left;
-
     }
+
+    .designers-subtitle {
+        position: absolute;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .designers-list {
+        padding-top: 0;
+    }
+
+    .designers-list__item-image {
+        padding-bottom: 24px;
+        height: 492px;
+    }
+
+    #designers .designers-list__item img {
+        height: 437px;
+    }
+
+    .jess-wonder-text {
+        padding-left: 0;
+    }
+
+    .testimonials-subtitle {
+        position: relative;
+        top: 0;
+        transform: rotate(0deg);
+        right: 0;
+        height: 46px;
+        margin-right: 0;
+    }
+
+    .testimonials-list__item-1,
+    .testimonials-list__item-2,
+    .testimonials-list__item-3 {
+        transform: rotate(0deg);
+    }
+
+    .testimonials-list {
+        display: none;
+    }
+
+    .testimonials-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials-blockquote {
+        width: 342px;
+        height: 178px;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 24px;
+        align-self: center;
+    }
+
+    .testimonials-image-big {
+        height: auto;
+        background-image: none;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+
+    .testimonials {
+        display: block;
+    }
+
+    .testimonials-subtitle h4 {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .testimonials-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonials-links {
+        display: block;
+    }
+
+    .testimonials-links ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 6px;
+        padding-top: 28px;
+    }
+
+    .testimonials-links ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials-links span {
+        font-weight: 700;
+    }
+
+    .strong-points {
+        display: flex;
+    }
+
+    .strong-points-image img {
+        height: 450px;
+    }
+
+    .strong-points-content-item {
+        order: -1;
+    }
+
+    .strong-points-subtitle {
+        padding-bottom: 30px;
+    }
+
+    .strong-points-subtitle h4 {
+        position: absolute;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .strong-points-title {
+        font-size: 46px;
+        font-weight: 400;
+        padding: 0px 37px 24px 37px;
+    }
+
+    .strong-points-content-list-item {
+        font-size: 24px;
+    }
+
+    .strong-points-content-list {
+        display: grid;
+        gap: 8px;
+        text-align: justify;
+    }
+
+    .mobile-section-nav {
+        display: block;
+    }
+
+    .mobile-nav-list {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 16px;
+        font-family: Bitter;
+        font-size: 40px;
+        font-weight: 400;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        height: 82px;
+        align-items: center;
+    }
+
+    .text-underline {
+        font-weight: 700;
+    }
+
+    .footer {
+        padding: 46px 0;
+    }
+
+    .footer-inner {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .footer-address {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-logo {
+        order: -1;
+        align-self: flex-end;
+    }
+
+    .footer-copyright {
+        text-align: left;
+    }
+
 }
